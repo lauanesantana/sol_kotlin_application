@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogosActivity"
+    android:background="#E8DEBC">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="714dp"
+        android:layout_height="189dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/viewjogos" />
+
+    <TextView
+        android:id="@+id/tituloJogos"
+        android:layout_width="181dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/coiny"
+        android:text="Jogos"
+        android:textAlignment="center"
+        android:textColor="#674F31"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtJogos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/coming_soon"
+        android:text="Aprenda se divertindo!"
+        android:textColor="#503622"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloJogos" />
+
+    <ImageView
+        android:id="@+id/iconeJogos"
+        android:layout_width="124dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jogador" />
+
+    <Button
+        android:id="@+id/btnMemoria"
+        android:layout_width="172dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/coming_soon"
+        android:text="Jogo da Memória"
+        android:textAlignment="center"
+        android:textColor="#674F31"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#E0D39F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/btnVelha"
+        android:layout_width="170dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/coming_soon"
+        android:text="Jogo da Velha"
+        android:textAlignment="center"
+        android:textColor="#674F31"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#E0D39F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMemoria" />
+
+    <Button
+        android:id="@+id/btnSequencia"
+        android:layout_width="171dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/coming_soon"
+        android:text="Complete a sequência"
+        android:textAlignment="center"
+        android:textColor="#674F31"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#E0D39F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVelha" />
+
+    <ImageButton
+        android:id="@+id/voltarMenu"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E8DEBC"
+        android:tint="#1A1107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ImageView
+        android:id="@+id/iconeMemoria"
+        android:layout_width="108dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="53dp"
+        android:src="@drawable/jogomemoria"
+        app:layout_constraintEnd_toStartOf="@+id/btnMemoria"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#E0D39F" />
+
+    <ImageView
+        android:id="@+id/iconeVelha"
+        android:layout_width="108dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnVelha"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconeMemoria"
+        app:srcCompat="@drawable/cerebro" />
+
+    <ImageView
+        android:id="@+id/iconeSequencia"
+        android:layout_width="109dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSequencia"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconeVelha"
+        app:srcCompat="@drawable/sequencia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
