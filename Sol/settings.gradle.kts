@@ -22,5 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Sol_ProjetoDMO1"
+rootProject.name = "Sol"
 include(":app")
+ 

@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JogosActivity"
-    android:background="#E8DEBC">
+    android:background="#E8DEBC"
+    tools:context=".JogosActivity">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tituloJogos" />
 
     <ImageView
-        android:id="@+id/iconeJogos"
+        android:id="@+id/imageView7"
         android:layout_width="124dp"
         android:layout_height="102dp"
         android:layout_marginTop="28dp"
@@ -105,20 +105,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnVelha" />
 
-    <ImageButton
-        android:id="@+id/voltarMenu"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="#E8DEBC"
-        android:tint="#1A1107"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
-
     <ImageView
-        android:id="@+id/iconeMemoria"
+        android:id="@+id/imageView2"
         android:layout_width="108dp"
         android:layout_height="97dp"
         android:layout_marginTop="53dp"
@@ -142,25 +130,37 @@
         app:titleTextColor="#E0D39F" />
 
     <ImageView
-        android:id="@+id/iconeVelha"
+        android:id="@+id/imageView4"
         android:layout_width="108dp"
         android:layout_height="98dp"
         android:layout_marginTop="60dp"
         app:layout_constraintEnd_toStartOf="@+id/btnVelha"
         app:layout_constraintHorizontal_bias="0.561"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iconeMemoria"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/cerebro" />
 
     <ImageView
-        android:id="@+id/iconeSequencia"
+        android:id="@+id/imageView5"
         android:layout_width="109dp"
         android:layout_height="99dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toStartOf="@+id/btnSequencia"
         app:layout_constraintHorizontal_bias="0.569"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iconeVelha"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/sequencia" />
+
+    <ImageButton
+        android:id="@+id/voltarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E8DEBC"
+        app:tint="#191107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

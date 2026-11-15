@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.sol_projetodmo1"
+    namespace = "com.example.sol"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.sol_projetodmo1"
+        applicationId = "com.example.sol"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
@@ -29,6 +29,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 

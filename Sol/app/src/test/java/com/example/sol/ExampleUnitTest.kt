@@ -1,4 +1,4 @@
-package com.example.sol_projetodmo1
+package com.example.sol
 
 import org.junit.Test
 
