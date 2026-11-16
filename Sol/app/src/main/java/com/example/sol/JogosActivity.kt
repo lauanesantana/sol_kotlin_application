@@ -29,5 +29,8 @@ class JogosActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.btnVelha.setOnClickListener {
+            startActivity(Intent(this, VelhaActivity::class.java))
+        }
     }
 }
