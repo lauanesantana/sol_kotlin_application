@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8DEBC"
+    tools:context=".SequenciaActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="336dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/coiny"
+        android:text=" Complete"
+        android:textColor="#674F31"
+        android:textSize="43sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="360dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/coiny"
+        android:text=" a sequência"
+        android:textColor="#674F31"
+        android:textSize="43sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pergunta" />
+
+    <ImageButton
+        android:id="@+id/btnSair3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E7DDBB"
+        android:tint="#674F31"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opcao1"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/pergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/coiny"
+        android:text="Qual letra está faltando?"
+        android:textColor="#674F31"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letra4" />
+
+    <ImageView
+        android:id="@+id/letra6"
+        android:layout_width="92dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letra3"
+        app:srcCompat="@android:drawable/list_selector_background" />
+
+    <ImageView
+        android:id="@+id/letra1"
+        android:layout_width="92dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@android:drawable/list_selector_background" />
+
+    <ImageView
+        android:id="@+id/letra3"
+        android:layout_width="92dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@android:drawable/list_selector_background" />
+
+    <ImageView
+        android:id="@+id/letra2"
+        android:layout_width="92dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/letra3"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/letra1"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@android:drawable/list_selector_background" />
+
+    <ImageView
+        android:id="@+id/letra4"
+        android:layout_width="92dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letra1"
+        app:srcCompat="@android:drawable/list_selector_background" />
+
+    <ImageView
+        android:id="@+id/letra5"
+        android:layout_width="92dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/letra6"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toEndOf="@+id/letra4"
+        app:layout_constraintTop_toBottomOf="@+id/letra2"
+        app:srcCompat="@android:drawable/list_selector_background" />
+
+    <ImageView
+        android:id="@+id/opcao1"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pergunta"
+        app:srcCompat="@android:drawable/list_selector_background" />
+
+    <ImageView
+        android:id="@+id/opcao2"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/opcao3"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toEndOf="@+id/opcao1"
+        app:layout_constraintTop_toBottomOf="@+id/pergunta"
+        app:srcCompat="@android:drawable/list_selector_background" />
+
+    <ImageView
+        android:id="@+id/opcao3"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pergunta"
+        app:srcCompat="@android:drawable/list_selector_background" />
+
+    <TextView
+        android:id="@+id/tempo"
+        android:layout_width="50dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/coiny"
+        android:text="0s"
+        android:textColor="#674F31"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/recorde"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/recorde"
+        android:layout_width="50dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/coiny"
+        android:text="0s"
+        android:textColor="#674F31"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTempo"
+        android:layout_width="75dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/coiny"
+        android:text="Tempo:"
+        android:textColor="#674F31"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/lblRecorde"
+        app:layout_constraintEnd_toStartOf="@+id/tempo" />
+
+    <TextView
+        android:id="@+id/lblRecorde"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/coiny"
+        android:text="Recorde:"
+        android:textColor="#674F31"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recorde" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

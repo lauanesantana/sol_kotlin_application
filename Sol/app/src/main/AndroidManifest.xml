@@ -28,6 +28,10 @@
         <activity
             android:name=".VelhaActivity"
             android:exported="false" />
+        <activity
+            android:name=".SequenciaActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
